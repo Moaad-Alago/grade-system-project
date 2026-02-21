@@ -1,4 +1,4 @@
-const API = "http://localhost:3000";
+const API = "https://grade-system-backend-78mv.onrender.com";
 
 /* ---------- Common Elements ---------- */
 const courseSelect = document.getElementById("courseSelect");
