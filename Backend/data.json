@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "name": "moaad alago",
+      "id": "326366127",
+      "courses": [
+        {
+          "courseName": "Math",
+          "grade": "87.00",
+          "status": "Passed"
+        },
+        {
+          "courseName": "Programming",
+          "grade": "90.00",
+          "status": "Passed"
+        }
+      ]
+    },
+    {
+      "name": "fozy nofal",
+      "id": "212712988",
+      "courses": [
+        {
+          "courseName": "Math",
+          "grade": "91.80",
+          "status": "Passed"
+        },
+        {
+          "courseName": "Programming",
+          "grade": "83.00",
+          "status": "Passed"
+        }
+      ]
+    }
+  ]
+}

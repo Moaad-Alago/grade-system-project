@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Floating background container -->
+<div class="floating-bg"></div>
+
+<!-- rest of your content (.container etc.) -->
+
+<div class="container">
+  <h1>Grade System</h1>
+
+  <form id="gradeForm">
+
+    <input type="text" id="studentName" placeholder="Student Name" required>
+    <input type="text" id="studentId" placeholder="Student ID" required>
+
+    <select id="courseSelect" required></select>
+
+    <div id="gradeInputs"></div>
+
+    <button type="submit">Calculate & Save</button>
+  </form>
+
+  <p id="result"></p>
+
+  <a href="students.html">View students</a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

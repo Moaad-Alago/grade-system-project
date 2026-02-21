@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    table-layout: fixed;
+    }
+
+    th, td {
+    border: 1px solid #d0d7de;
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word;
+    }
+    th {
+      background: #f3f4f6;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+    .table-wrap {
+      max-height: 380px;   
+      overflow: auto;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating background container -->
+  <div class="floating-bg"></div>
+  <!-- rest of your content (.container etc.) -->
+  
+  <div class="container">
+    <h1>Students List</h1>
+
+    <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:12px;">
+      <input
+        type="text"
+        id="searchIdInput"
+        placeholder="Search by Student ID"
+        style="flex:1; min-width:220px; margin:0;"
+      >
+
+      <select id="statusFilter" style="width:220px; margin:0;">
+        <option value="">All Statuses</option>
+        <option value="Passed">Passed</option>
+        <option value="Failed">Failed</option>
+      </select>
+
+      <button type="button" id="searchBtn" style="margin-top:0; padding:0.9rem 1.2rem;">Search</button>
+      <button type="button" id="resetBtn" style="margin-top:0; padding:0.9rem 1.2rem; background:#64748b;">Reset</button>
+    </div>
+    <div class="table-wrap">
+        <table id="studentsTable">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Courses & Grades</th>
+            </tr>
+            </thead>
+            <tbody id="studentsBody"></tbody>
+        </table>
+    </div>
+
+    <br>
+    <a href="index.html">Back</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
